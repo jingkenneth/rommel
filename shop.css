@@ -1,0 +1,138 @@
+ box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header Styles */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Hero Section Styles */
+
+.hero {
+  background-image: linear-gradient(to bottom, #333, #666);
+  background-size: cover;
+  height: calc(100vh - var(--header-height));
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.cta {
+  background-color: #333;
+  color: #fff;
+  border-radius: var(--radius);
+  padding: var(--padding);
+}
+
+.cta:hover {
+  background-color: #444;
+}
+
+/* Product Grid Styles */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, auto));
+}
+
+.product-grid {
+  display: grid;
+}
+
+.product-item {
+  grid-column-start: span; /* adjust this to control the number of columns */
+}
+
+.product-item img {
+  width: calc(100% - var(--padding));
+}
+
+.product-item h2 {
+  font-size: var(--font-size-small);
+}
+
+.product-item p {
+    font-size: var(--font-size-regular);
+    margin-bottom: var(--margin-bottom);
+    padding-bottom: var(--padding);
+    border-bottom-style dotted; /* add a dotted border */
+    border-bottom-width var(--border-width);
+    border-bottom-color var(--border-color);
+}
+
+.price {
+    font-size,var(--font-size-small);
+    font-weight:bold; /* bold the price text */
+    margin-top,var(--margin-top);
+    margin-bottom,var(--margin-bottom);
+    padding-top,var(--padding-top);
+    padding-bottom,var(--padding-bottom);
+    background-color,var(--background-color-price); /* set a background color for the price */
+    color,var(--text-color-price); /* set a text color for the price */
+    border-style,solid; /* add a solid border around the price */
+    border-width,var(--border-width); /* set a border width */
+    border-color,var(--border-color); /* set a border color */
+    box-shadow,var(--box-shadow); /* add a box shadow */
+    box-shadow-radius,var(--box-shadow-radius); /* set the box shadow radius */
+    box-shadow-color,var(--box-shadow-color); /* set the box shadow color */
+    box-shadow-depth,var(--box-shadow-depth); /* set the box shadow depth */
+    padding-left,var(--padding-left); /* set left padding */
+    padding-right,var(--padding-right); /* set right padding */
+    margin-left,var(--margin-left); /* set left margin */
+    margin-right,var(--margin-right); /* set right margin */
+    text-align,var(--text-align); /* center the text horizontally */
+    text-decoration,line-through; /* remove underline decoration from the price text */
+    line-height,var(--line-height); /* set line height */
+    white-space,nowrap; /* do not wrap text inside price element */
+}
+/* Footer Styles */
+
+footer {
+position:absolute; bottom,0; left,0; width,100%; background-color,#333; color,#fff; text-align:center; padding,10px;}
