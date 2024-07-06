@@ -1,52 +1,123 @@
+<title>Infinix</title>  
+<style>  
+ .slider-container {  
+    position: relative;  
+    width: 100%;  
+    overflow: hidden;  
+  }  
+ .slider {  
+    display: flex;  
+    flex-wrap: nowrap;  
+    overflow-x: auto;  
+    padding: 20px;  
+  }  
+ .slide {  
+    flex: 0 0 100%;  
+    margin: 10px;  
+    padding: 20px;  
+    border: 1px solid #ddd;  
+    border-radius: 10px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+  }  
+ .slider::-webkit-scrollbar {  
+    display: none;  
+  }  
+ .slider {  
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }  
+ .slide:hover {  
+    transform: scale(1.1);  
+    transition: transform 0.5s ease-in-out;  
+  }  
+ .slide:not(:first-child) {  
+    margin-left: 20px;  
+  }  
+ .slide:last-child {  
+    margin-right: 20px;  
+  }  
+</style>  
+  
 <div class="container">  
   <div class="row">  
-    <div class="col-4 text-center">  
+    <div class="col-12 text-center">  
+      <h2>INFINIX CELLPHONE</h2>  
+      <hr class="hr">  
+    </div>  
+  </div>  
+</div>  
+  
+<div class="slider-container">  
+  <div class="slider">  
+    <div id="slide1" class="slide">  
       <label id="product1">  
         <span style="font-weight:bold; color:#00698f">Hot40i</span>  
       </label>  
-      <img src="hot40i-7289.jpg" style="width: 500px;height: 300px;" class="img-thumbnail">  
+      <img class="img-thumbnail" style="width: 500px;height: 300px;" src="hot40i-7289.jpg">  
       <br>  
-      <label for="product1" id="price1">7289.00</label>  
-      <input type="number" class="form-control" id="qty1" placeholder="Enter quantity">  
-      <button class="btn btn-primary">Next</button>  
+      <label id="price1" for="product1">7289.00</label>  
+      <input placeholder="Enter quantity" id="qty1" class="form-control" type="number">  
+      <br>  
     </div>  
-    <div class="col-4 text-center">  
+    <div id="slide2" class="slide">  
       <label id="product2">  
         <span style="font-weight:bold; color:#00698f">Infinix zero30</span>  
       </label>  
-      <img src="infinix zero 30.jpg" style="width:500px;height: 300px;" class="img-thumbnail">  
+      <img class="img-thumbnail" style="width:500px;height: 300px;" src="infinix zero 30.jpg">  
       <br>  
-      <label for="product2" id="price2">14000.00</label>  
-      <input type="number" class="form-control" id="qty2" placeholder="Enter quantity">  
-      <button class="btn btn-primary">Next</button>  
+      <label id="price2" for="product2">14000.00</label>  
+      <input placeholder="Enter quantity" id="qty2" class="form-control" type="number">  
+      <br>  
     </div>  
-      
+    <div id="slide3" class="slide">  
+      <label id="product3">  
+        <span style="font-weight:bold; color:#00698f">Note40</span>  
+      </label>  
+      <img class="img-thumbnail" style="width: 500px;height: 300px;" src="note40-v8999.jpg">  
+      <br>  
+      <label id="price3" for="product3">8999.00</label>  
+      <input placeholder="Enter quantity" id="qty3" class="form-control" type="number">  
+      <br>  
+    </div>  
+    <div id="slide4" class="slide">  
+      <label id="product4">  
+        <span style="font-weight:bold; color:#00698f">Infinix zero30</span>  
+      </label>  
+      <img class="img-thumbnail" style="width:500px;height: 300px;" src="inifnix zero 5g-14999.jpg">  
+      <br>  
+      <label id="price4" for="product4">11000.00</label>  
+      <input placeholder="Enter quantity" id="qty4" class="form-control" type="number">  
+      <br>  
+    </div>  
+    <div id="slide5" class="slide">  
+      <label id="product5">  
+        <span style="font-weight:bold; color:#00698f">Smart8</span>  
+      </label>  
+      <img class="img-thumbnail" style="width: 500px;height: 300px;" src="smart8-2499..jpg">  
+      <br>  
+      <label id="price5" for="product5">2999.00</label>  
+      <input placeholder="Enter quantity" id="qty5" class="form-control" type="number">  
+      <br>  
+    </div>  
+    <div id="slide6" class="slide">  
+      <label id="product6">  
+        <span style="font-weight:bold; color:#00698f">Infinix Hot20s</span>  
+      </label>  
+      <img class="img-thumbnail" style="width:500px;height: 300px;" src="infinixhot20s.jpg">  
+      <br>  
+      <label id="price6" for="product4">4999.00</label>  
+      <input placeholder="Enter quantity" id="qty6" class="form-control" type="number">  
+      <br>  
+    </div>  
+    <div class="col-4">  
+      <label for="carts">  
+        <span style="font-weight:bold; color:#00698f"> Orders</span>  
+      </label>  
+      <br>  
+      <textarea style="width: 350px;height: 400px;font-size: 12px;" readonly="" cols="200" id="carts" rows="29" class="form-control"></textarea>  
+      <input placeholder="total" readonly="" id="total" class="form-control border-0" type="text">  
+      <input placeholder="Cash Tendered" id="cash" class="form-control" type="number">  
+      <input placeholder="Change" readonly="" id="change" class="form-control border-0" type="text">  
+    </div>  
   </div>  
 </div>  
-<style>
-  .btn {  
-  background-color: #00698f;  
-  color: #fff;  
-  padding: 10px 20px;  
-  border: none;  
-  border-radius: 5px;  
-  cursor: pointer;  
-}  
-  
-.btn:hover {  
-  background-color: #004d7f;  
-}  
-  
-.btn:active {  
-  background-color: #003366;  
-}  
-</style>
-<script>
-  document.querySelectorAll('.btn').forEach(btn =&gt; {  
-  btn.addEventListener('click', () =&gt; {  
-    // Add code here to handle the button click event  
-    console.log('Button clicked!');  
-  });  
-});  
-
-</script>
